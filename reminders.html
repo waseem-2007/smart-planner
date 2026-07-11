@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminders - Smart Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="notes.html">Notes</a>
+            <a href="reminders.html" class="active">Reminders</a>
+            <a href="timings.html">Timings</a>
+            <a href="routine.html">Routine</a>
+        </nav>
+
+        <section class="card page-card">
+            <h2>Medicine Reminder</h2>
+            <div class="small-form">
+                <input id="medicine-name" type="text" placeholder="Medicine name">
+                <input id="medicine-time" type="time">
+                <button id="add-medicine-btn">Add Reminder</button>
+            </div>
+            <ul id="medicine-list"></ul>
+        </section>
+    </div>
+
+    <script src="reminders.js"></script>
+</body>
+</html>

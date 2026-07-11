@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - Smart Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <h2>Planner</h2>
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="notes.html">Notes</a>
+            <a href="reminders.html">Reminders</a>
+            <a href="timings.html">Timings</a>
+            <a href="routine.html">Routine</a>
+            <a href="calendar.html" class="active">Calendar</a>
+            <a href="login.html">Login</a>
+            <button id="theme-toggle">🌙 Dark Mode</button>
+        </aside>
+
+        <main class="main-content">
+            <section class="card page-card">
+                <h2>Discipline Calendar</h2>
+                <div class="calendar-toolbar">
+                    <button id="prev-month">◀</button>
+                    <h3 id="calendar-month">Month</h3>
+                    <button id="next-month">▶</button>
+                </div>
+                <div class="calendar-layout">
+                    <aside class="discipline-panel">
+                        <h3>Routine list</h3>
+                        <p class="panel-help">Choose a routine and tick its daily progress.</p>
+                        <ul id="discipline-routines"></ul>
+                    </aside>
+                    <div class="calendar-section">
+                        <div id="calendar" class="calendar-grid"></div>
+                    </div>
+                </div>
+
+                <div class="analysis-card">
+                    <h3>Discipline Chat Analysis</h3>
+                    <p id="analysis-summary" class="analysis-summary">Your discipline is being tracked live.</p>
+                    <div class="analysis-stats">
+                        <div class="analysis-chip">
+                            <span>Current streak</span>
+                            <strong id="analysis-streak">0</strong>
+                        </div>
+                        <div class="analysis-chip">
+                            <span>Completed days</span>
+                            <strong id="analysis-total">0</strong>
+                        </div>
+                    </div>
+                    <div id="analysis-message" class="analysis-message">Start with one small win and build momentum.</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="calendar.js"></script>
+</body>
+</html>

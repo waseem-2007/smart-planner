@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timings - Smart Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="notes.html">Notes</a>
+            <a href="timings.html" class="active">Timings</a>
+            <a href="routine.html">Routine</a>
+        </nav>
+
+        <section class="card page-card">
+            <h2>Important Timing</h2>
+            <div class="small-form">
+                <input id="timing-title" type="text" placeholder="Meeting / class / deadline">
+                <input id="timing-time" type="time">
+                <button id="add-timing-btn">Add Timing</button>
+            </div>
+            <ul id="timing-list"></ul>
+        </section>
+    </div>
+
+    <script src="timings.js"></script>
+</body>
+</html>

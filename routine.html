@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine - Smart Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="notes.html">Notes</a>
+            <a href="timings.html">Timings</a>
+            <a href="routine.html" class="active">Routine</a>
+        </nav>
+
+        <section class="card page-card">
+            <h2>Daily Routine Tracker</h2>
+            <div class="row">
+                <input id="routine-input" type="text" placeholder="Add a routine item">
+                <button id="add-routine-btn">Add Routine</button>
+            </div>
+            <div id="routine-list"></div>
+            <div class="progress-box">
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <p id="progress-text">0 of 0 completed</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="routine.js"></script>
+</body>
+</html>

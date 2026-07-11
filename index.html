@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Daily Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <h2>Planner</h2>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="notes.html">Notes</a>
+            <a href="timings.html">Timings</a>
+            <a href="routine.html">Routine</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="login.html">Login</a>
+            <button id="theme-toggle">🌙 Dark Mode</button>
+        </aside>
+
+        <main class="main-content">
+            <header class="hero">
+                <h1>Smart Daily Planner</h1>
+                <p>Manage study notes, medicine reminders, important timings, daily tasks, and routines in one place.</p>
+            </header>
+
+            <section class="stats">
+                <div class="stat-card">
+                    <strong id="days-tracked">0</strong>
+                    <span>Days</span>
+                </div>
+                <div class="stat-card">
+                    <strong id="months-tracked">0</strong>
+                    <span>Months</span>
+                </div>
+                <div class="stat-card">
+                    <strong id="years-tracked">0</strong>
+                    <span>Years</span>
+                </div>
+            </section>
+
+            <div class="dashboard-grid">
+                <section class="card dashboard-card">
+                    <h2>Daily Tasks</h2>
+                    <p>Keep your top tasks visible and easy to complete.</p>
+                    <a class="card-link" href="tasks.html">Open Tasks Page</a>
+                </section>
+                <section class="card dashboard-card">
+                    <h2>Study Notes</h2>
+                    <p>Save short study ideas, class notes, and important points.</p>
+                    <a class="card-link" href="notes.html">Open Notes Page</a>
+                </section>
+                <section class="card dashboard-card">
+                    <h2>Medicine Reminders</h2>
+                    <p>Never forget your medicine again with reminders.</p>
+                    <a class="card-link" href="reminders.html">Open Reminders Page</a>
+                </section>
+                <section class="card dashboard-card">
+                    <h2>Routine Tracker</h2>
+                    <p>Track your daily progress and build consistency.</p>
+                    <a class="card-link" href="routine.html">Open Routine Page</a>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

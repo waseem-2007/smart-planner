@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - Smart Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tasks.html" class="active">Tasks</a>
+            <a href="notes.html">Notes</a>
+            <a href="timings.html">Timings</a>
+            <a href="routine.html">Routine</a>
+        </nav>
+
+        <section class="card page-card">
+            <h2>Daily Tasks</h2>
+            <div class="row">
+                <input id="input-box" type="text" placeholder="Add a task">
+                <button id="add-task-btn">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+        </section>
+    </div>
+
+    <script src="tasks.js"></script>
+</body>
+</html>
