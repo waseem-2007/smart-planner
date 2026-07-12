@@ -1,5 +1,4 @@
 const STORAGE_KEY = 'smart-planner-state';
-const themeToggle = document.getElementById('theme-toggle');
 
 const defaultRoutines = [
     { id: 1, name: 'Wake up early', done: false },
@@ -57,20 +56,6 @@ function loadState() {
 
 function saveState() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-}
-
-function applyTheme() {
-    const isDark = localStorage.getItem('planner-theme') === 'dark';
-    document.body.classList.toggle('dark', isDark);
-    if (themeToggle) {
-        themeToggle.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
-    }
-}
-
-function toggleTheme() {
-    const isDark = document.body.classList.contains('dark');
-    localStorage.setItem('planner-theme', isDark ? 'light' : 'dark');
-    applyTheme();
 }
 
 function escapeHtml(text) {
@@ -346,12 +331,6 @@ function toggleRoutine(id) {
     saveState();
     renderRoutines();
 }
-
-if (themeToggle) {
-    themeToggle.addEventListener('click', toggleTheme);
-}
-
-applyTheme();
 
 addTaskBtn.addEventListener('click', addTask);
 inputBox.addEventListener('keydown', (event) => {
