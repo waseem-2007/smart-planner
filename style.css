@@ -147,18 +147,22 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f7f9fc;
+    background: #ffffff;
+    color: #111827;
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 8px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .task-item.checked,
 .reminder-item.done,
 .timing-item.done {
-    background: #e7f7ea;
+    background: #1f3b2d;
     text-decoration: line-through;
-    color: #4b7b4b;
+    color: #fef3c7;
+    border-color: #2f855a;
 }
 
 .small-btn {
@@ -515,6 +519,20 @@ body.dark .day-name,
 body.dark .calendar-cell {
     background: #374151;
     color: #f3f4f6;
+}
+
+body.dark li {
+    background: #1f2937;
+    color: #f9fafb;
+    border-color: #4b5563;
+}
+
+body.dark .task-item.checked,
+body.dark .reminder-item.done,
+body.dark .timing-item.done {
+    background: #1f3b2d;
+    color: #fef3c7;
+    border-color: #2f855a;
 }
 
 body.dark .routine-table th {
